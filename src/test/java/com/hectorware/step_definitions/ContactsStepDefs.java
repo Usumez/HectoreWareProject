@@ -34,7 +34,7 @@ public class ContactsStepDefs {
 
     @And("user enters valid group name {string}")
     public void userEntersValidGroupName(String groupName) {
-        Utils.wait(4);
+
         contactsPage.createNewGroup(groupName);
     }
 

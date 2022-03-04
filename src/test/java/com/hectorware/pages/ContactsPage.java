@@ -17,7 +17,6 @@ public class ContactsPage extends BasePage{
     public WebElement createGroupArrowBtn;
 
     public void createNewGroup(String groupName){
-        Utils.wait(3);
         wait.until(ExpectedConditions.visibilityOf(newGroupInputBox));
         newGroupInputBox.sendKeys(groupName);
     }

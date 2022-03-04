@@ -9,7 +9,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-import javax.rmi.CORBA.Util;
 
 public class LoginStepsDefs {
 
@@ -27,7 +26,6 @@ public class LoginStepsDefs {
 
     @Then("index page should be displayed")
     public void index_page_should_be_displayed() {
-        Utils.wait(5);
         String exptectedTitle = "Files - Hectorware - QA";
         String actualtitle = Driver.get().getTitle();
         Assert.assertEquals("User is not on the index page", exptectedTitle, actualtitle);
